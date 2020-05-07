@@ -87,7 +87,7 @@ func main() {
 	h := handler.New(&handler.Config{
 		Schema:     &schema,
 		Pretty:     true,
-		Playground: true,
+		Playground: true, // False or delete (close gui)
 	})
 
 	http.Handle("/graphql", h)
